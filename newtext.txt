@@ -1,1 +1,2 @@
 This is an Example text for branch test.
+And this is Second Line.
