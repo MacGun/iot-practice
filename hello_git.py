@@ -9,9 +9,17 @@ startTime = nowtime()
 def index():
     return "This server is Opened at {}.<br>And now time is {}.".format(startTime, nowtime())
 
+
+@app.rout('/function', methods=['GET'])
+def function():
+    funclist="plus minus times devide".split()
+    args = flask.requests.args
+    print(args)
+    return str(args)
+
+
 def main():
     app.run(host="0.0.0.0", port=12800, debug=True)
-
 
 
 if __name__ == '__main__':
